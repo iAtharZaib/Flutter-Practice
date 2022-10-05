@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/screen/containerWidget.dart';
 import 'package:myapp/screen/homepage.dart';
+import 'package:myapp/screen/imageWidget.dart';
 import 'package:myapp/screen/listViewWidget.dart';
 import 'package:myapp/screen/rowColumnWidget.dart';
 
@@ -15,13 +16,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: true,
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
       // ignore: prefer_const_constructors
-      home: ListViewWidget(),
+      home: imageWiddget(),
     );
   }
 }
